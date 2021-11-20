@@ -1,0 +1,17 @@
+package com.yxd.designpattern.behavioral.command.demo02;
+
+/**
+ * 播放指令类
+ */
+public class PlayAction implements IAction {
+    private GPlayer gPlayer;
+
+    public PlayAction(GPlayer gPlayer) {
+        this.gPlayer = gPlayer;
+    }
+
+    @Override
+    public void execute() {
+        gPlayer.play();
+    }
+}
